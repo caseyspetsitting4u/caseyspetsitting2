@@ -1,6 +1,9 @@
- <meta charset="UTF-8" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>| Contact Casey's Pet Sitting 4U</title>
+  <title>Contact | Casey's Pet Sitting 4U</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
     body {
@@ -8,6 +11,38 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+    }
+
+    header {
+      background-color: #4d6d9a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav {
+      background-color: #4d6d9a;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      padding: 0.5rem 1rem;
+    }
+
+    nav a:hover {
+      color: #cfdff6;
     }
 
     section {
@@ -19,91 +54,38 @@
 
     ul {
       list-style-position: inside;
-      display: inline-block;
-      text-align: left;
-      margin-top: 1rem;
-    }
-
-    h1, h2, h3, p {
-      text-align: center;
-    }
-
-    nav ul {
-      list-style: none;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-    }
-
-    nav a {
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #e0e0e0;
-    }
-  </style>
-</head><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Casey's Pet Sitting 4U</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    section {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
+      margin: 1rem auto;
       text-align: left;
+      display: inline-block;
     }
 
-    label {
-      display: flex;
-      flex-direction: column;
-      font-weight: bold;
-    }
-
-    input, textarea {
-      padding: 0.5rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    button {
-      width: fit-content;
-      padding: 0.6rem 1.5rem;
+    .contact-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
       background-color: #4d6d9a;
       color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
     }
 
-    button:hover {
+    .contact-button:hover {
       background-color: #3b577a;
     }
 
-    .contact-info {
-      margin: 1rem 0;
-      font-size: 1.1rem;
+    footer {
+      background-color: #e0e0e0;
+      text-align: center;
+      padding: 1rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Contact Casey's Pet Sitting 4U</h1>
+    <h1>Pet Taxi Service</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -111,12 +93,12 @@
         <li><a href="dog-walking.html">Dog Walking</a></li>
         <li><a href="drop-ins.html">Drop-ins</a></li>
         <li><a href="overnight-sitting.html">Overnight Pet Sitting</a></li>
-        <li><a href="pet-taxi.html">Pet Taxi Services</a></li>    </ul>
+        <li><a href="pet-taxi.html">Pet Taxi</a></li>
         <li><a href="pet-waste-removal.html">Waste Removal</a></li>
-        <li><a href="gallery.html">Gallery</a></li> </nav>
+         <li><a href="gallery.html">Gallery</a></li> </ul>
+    </nav>
   </header>
-
-  <section>
+      
     <h2>Get In Touch</h2>
     <p class="contact-info">
       📞 (717)-524-8883 <br />
