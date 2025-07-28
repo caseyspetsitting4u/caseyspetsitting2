@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Casey's Pet Sitting 4U</title>
- 
   <style>
     body {
       background-color: #f7f7f7;
@@ -52,27 +51,45 @@
       text-align: center;
     }
 
-    ul {
-      list-style-position: inside;
-      padding: 0;
-      margin: 1rem auto;
-      text-align: left;
-      display: inline-block;
+    .contact-info {
+      margin-bottom: 2rem;
     }
 
-    .contact-button {
-      display: inline-block;
-      margin-top: 2rem;
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    form label {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 400px;
+      text-align: left;
+    }
+
+    input, textarea {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+    }
+
+    button {
       padding: 0.8rem 1.5rem;
       background-color: #4d6d9a;
       color: white;
-      text-decoration: none;
       font-weight: bold;
+      border: none;
       border-radius: 6px;
+      cursor: pointer;
       transition: background-color 0.3s ease;
     }
 
-    .contact-button:hover {
+    button:hover {
       background-color: #3b577a;
     }
 
@@ -85,7 +102,7 @@
 </head>
 <body>
   <header>
-    <h1>Pet Taxi Service</h1>
+    <h1>Contact</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -95,10 +112,12 @@
         <li><a href="overnight-sitting.html">Overnight Pet Sitting</a></li>
         <li><a href="pet-taxi.html">Pet Taxi</a></li>
         <li><a href="pet-waste-removal.html">Waste Removal</a></li>
-         <li><a href="gallery.html">Gallery</a></li> </ul>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
     </nav>
   </header>
-      
+
+  <section>
     <h2>Get In Touch</h2>
     <p class="contact-info">
       📞 (717)-524-8883 <br />
@@ -124,8 +143,6 @@
       </label>
       <button type="submit">Send</button>
     </form>
-
-  
   </section>
 
   <footer>
