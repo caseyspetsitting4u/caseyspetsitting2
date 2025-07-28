@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Casey's Pet Sitting 4U</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background-color: #f7f7f7;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #4d6d9a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      background-color: #4d6d9a;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+    }
+
+    nav a:hover {
+      color: #cfdff6;
+    }
+
+    .gallery {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background-color: #e0e0e0;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gallery</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="dog-walking.html">Dog Walking</a></li>
+        <li><a href="drop-ins.html">Drop-ins</a></li>
+        <li><a href="overnight-sitting.html">Overnight Pet Sitting</a></li>
+        <li><a href="pet-taxi.html">Pet Taxi</a></li>
+        <li><a href="pet-waste-removal.html">Waste Removal</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="gallery">
+    <img src="images/photo1.jpg" alt="Happy dog" />
+    <img src="images/photo2.jpg" alt="Cat on couch" />
+    <img src="images/photo3.jpg" alt="Dog walking service" />
+    <img src="images/photo4.jpg" alt="Pet sitter with dog" />
+    <!-- Add more images as needed -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Casey's Pet Sitting 4U</p>
+  </footer>
+</body>
+</html>
 
