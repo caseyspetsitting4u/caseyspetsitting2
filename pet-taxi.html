@@ -5,85 +5,115 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pet Taxi Service | Casey's Pet Sitting 4U</title>
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      background-color: #f7f7f7;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #4d6d9a;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-
-    nav {
-      background-color: #4d6d9a;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      text-decoration: none;
-      font-weight: bold;
-      color: white;
-      padding: 0.5rem 1rem;
-    }
-
-    nav a:hover {
-      color: #cfdff6;
-    }
-
-    section {
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    ul {
-      list-style-position: inside;
-      padding: 0;
-      margin: 1rem auto;
-      text-align: left;
-      display: inline-block;
-    }
-
-    .contact-button {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 0.8rem 1.5rem;
-      background-color: #4d6d9a;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
-    }
-
-    .contact-button:hover {
-      background-color: #3b577a;
-    }
-
-    footer {
-      background-color: #e0e0e0;
-      text-align: center;
-      padding: 1rem;
-    }
-  </style>
+  
 </head>
-<body>
+<body>body {
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4d6d9a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav {
+  background-color: #4d6d9a;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+  color: #cfdff6;
+}
+
+section {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+ul {
+  list-style-position: inside;
+  padding: 0;
+  margin: 1rem auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.contact-info {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.contact-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #4d6d9a;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #3b577a;
+}
+
+footer {
+  background-color: #e0e0e0;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Mobile Navigation */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .contact-info {
+    font-size: 1rem;
+  }
+}
+
   <header>
     <h1>Pet Taxi Service</h1>
     <nav>
