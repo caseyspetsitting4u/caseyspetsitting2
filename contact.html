@@ -46,13 +46,15 @@
 
     section {
       max-width: 700px;
+      width: 90%;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
 
     .contact-info {
       margin-bottom: 2rem;
+      font-size: 1.2rem;
     }
 
     form {
@@ -97,6 +99,18 @@
       background-color: #e0e0e0;
       text-align: center;
       padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .contact-info {
+        font-size: 1rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
     }
   </style>
 </head>
@@ -122,9 +136,8 @@
     <p class="contact-info">
       📞 1-833-5PETSIT (1-833-573-8748) <br />
       📧 <a href="mailto:info@caseyspetsitting4u2.com?subject=Pet%20Sitting%20Inquiry&body=Hi%20Casey%2C%0AI'm%20interested%20in%20your%20pet%20sitting%20services.%20Please%20let%20me%20know%20your%20availability.%0AThank%20you!">
-  info@caseyspetsitting4u2.com
-</a>
-
+        info@caseyspetsitting4u2.com
+      </a>
     </p>
 
     <form action="https://formspree.io/f/manbjwdw" method="POST">
