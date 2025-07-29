@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Overnight Pet Sitting | Casey's Pet Sitting 4U</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
@@ -24,22 +22,22 @@
       list-style: none;
       padding: 0;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 1rem;
     }
 
     nav a {
-  text-decoration: none;
-  font-weight: bold;
-  color: white; /* Changed from #333 to white */
-}
-
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
     }
 
     section {
       max-width: 800px;
+      width: 90%;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
 
@@ -47,8 +45,18 @@
       list-style-position: inside;
       padding: 0;
       margin: 1rem auto;
-      text-align: center;
+      text-align: left;
       display: inline-block;
+    }
+
+    .contact-section {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .contact-info {
+      font-size: 1.2rem;
+      margin-top: 1rem;
     }
 
     .contact-button {
@@ -71,26 +79,42 @@
       background-color: #e0e0e0;
       margin-top: 2rem;
     }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 16px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .contact-info {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
-<header>
-  <h1>Overnight Pet Sitting</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="dog-walking.html">Dog Walking</a></li>
-      <li><a href="drop-ins.html">Drop-ins</a></li>
-      <li><a href="overnight-sitting.html">Overnight Pet Sitting</a></li>
-      <li><a href="pet-taxi.html">Pet Taxi Services</a></li>
-      <li><a href="pet-waste-removal.html">Waste Removal</a></li>
-      <li><a href="gallery.html">Gallery</a></li> </ul>
-  </nav>
-</header> 
+  <header style="background-color: #4d6d9a; color: white;">
+    <h1>Overnight Pet Sitting</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="dog-walking.html">Dog Walking</a></li>
+        <li><a href="drop-ins.html">Drop-ins</a></li>
+        <li><a href="overnight-sitting.html">Overnight Pet Sitting</a></li>
+        <li><a href="pet-taxi.html">Pet Taxi Services</a></li>
+        <li><a href="pet-waste-removal.html">Waste Removal</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header> 
 
   <section>
-   <center> <h2>Comfort, Care, and Peace of Mind</h2>
+    <h2>Comfort, Care, and Peace of Mind</h2>
     <p>Some pets feel safest and most comfortable in their own home—especially overnight. With Casey's Pet Sitting 4 U, your pets can enjoy the peace of staying in their familiar environment while still receiving the attentive care they need.</p>
 
     <p>Our <strong>overnight pet sitting</strong> service is perfect for both <strong>dogs and cats</strong> who need companionship, routine, and supervision while you're away for a night, a weekend, or an extended trip.</p>
@@ -108,17 +132,18 @@
     <p>You’ll enjoy peace of mind knowing that your pet is cared for by someone who treats them like family. We stay in your home to ensure comfort, security, and stability for your pets while maintaining their normal routine.</p>
 
     <p><strong>Rest easy—Casey’s Pet Sitting 4 U has it covered while you’re away.</strong></p>
+  </section>
 
-   <section class="contact-section">
-  <h2>Get In Touch</h2>
-  <p class="contact-info">
-    📞 1-833-5PETSIT (1-833-573-8748) <br />
-    📧 <a href="mailto:info@caseyspetsitting4u2.com?subject=Pet%20Sitting%20Inquiry&body=Hi%20Casey%2C%0AI'm%20interested%20in%20your%20pet%20sitting%20services.%20Please%20let%20me%20know%20your%20availability.%0AThank%20you!">
-  info@caseyspetsitting4u2.com
-</a>
+  <section class="contact-section">
+    <h2>Get In Touch</h2>
+    <p class="contact-info">
+      📞 1-833-5PETSIT (1-833-573-8748) <br />
+      📧 <a href="mailto:info@caseyspetsitting4u2.com?subject=Pet%20Sitting%20Inquiry&body=Hi%20Casey%2C%0AI'm%20interested%20in%20your%20pet%20sitting%20services.%20Please%20let%20me%20know%20your%20availability.%0AThank%20you!">
+        info@caseyspetsitting4u2.com
+      </a>
+    </p>
+  </section>
 
-  </p>
-</section>
   <footer>
     <p>&copy; 2025 Casey's Pet Sitting 4U</p>
   </footer>
