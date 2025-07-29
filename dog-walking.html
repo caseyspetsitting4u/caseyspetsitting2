@@ -1,7 +1,9 @@
- <meta charset="UTF-8" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Dog-walking | Casey's Pet Sitting 4U</title>
+  <title>Dog Walking | Casey's Pet Sitting 4U</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
     body {
@@ -11,10 +13,36 @@
       padding: 0;
     }
 
+    header, footer {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+    }
+
+    header {
+      background-color: #4d6d9a;
+      color: white;
+    }
+
     section {
-      max-width: 700px;
+      max-width: 800px;
+      width: 90%;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
 
@@ -25,38 +53,36 @@
       margin-top: 1rem;
     }
 
-    h1, h2, h3, p {
+    .contact-section {
       text-align: center;
+      padding: 2rem 1rem;
     }
 
-  nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  padding: 0;
-  list-style: none;
-}
-
-
-    nav a {
-      text-decoration: none;
-      font-weight: bold;
+    .contact-info {
+      font-size: 1.2rem;
+      margin-top: 1rem;
     }
 
     footer {
-      text-align: center;
-      padding: 1rem;
       background-color: #e0e0e0;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 16px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .contact-info {
+        font-size: 1rem;
+      }
     }
   </style>
-</head><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dog Walking Services</title>
-  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
@@ -68,28 +94,41 @@
         <li><a href="dog-walking.html">Dog Walking</a></li>
         <li><a href="drop-ins.html">Drop-ins</a></li>
         <li><a href="overnight-sitting.html">Overnight Pet Sitting</a></li>
-        <li><a href="Pet-Taxi.html">Pet Taxi Services</a></li>  </ul>
+        <li><a href="pet-taxi.html">Pet Taxi Services</a></li>
         <li><a href="pet-waste-removal.html">Waste Removal</a></li>
-         <li><a href="gallery.html">Gallery</a></li>  
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
     </nav>
   </header>
-<section>
-  <h2 style="text-align: center;">Keep Your Dog Active and Happy</h2>
-  <p>Our dog walking service provides your furry friend with the exercise and companionship they need. Whether it's a quick walk or a longer adventure, your dog will be in great hands.
-  If you’re like most of our loyal clients, you want only the best for your dog. One of the simplest ways to ensure their happiness and well-being is by choosing our reliable dog walking service.
-  Whether you work long hours, have an unpredictable schedule, or are a busy parent juggling multiple responsibilities, we’re here to help. Our personalized approach means your dog gets the attention and care they deserve—every time.
-  Don’t settle for less when the best is just a call away. Reach out today!</p>
-</section>
- <h2>Get In Touch</h2>
+
+  <section>
+    <h2>Keep Your Dog Active and Happy</h2>
+    <p>
+      Our dog walking service provides your furry friend with the exercise and companionship they need. Whether it's a quick walk or a longer adventure, your dog will be in great hands.
+    </p>
+    <p>
+      If you’re like most of our loyal clients, you want only the best for your dog. One of the simplest ways to ensure their happiness and well-being is by choosing our reliable dog walking service.
+    </p>
+    <p>
+      Whether you work long hours, have an unpredictable schedule, or are a busy parent juggling multiple responsibilities, we’re here to help. Our personalized approach means your dog gets the attention and care they deserve—every time.
+    </p>
+    <p>
+      Don’t settle for less when the best is just a call away. Reach out today!
+    </p>
+  </section>
+
+  <section class="contact-section">
+    <h2>Get In Touch</h2>
     <p class="contact-info">
       📞 1-833-5PETSIT (1-833-573-8748) <br />
-      📧<a href="mailto:info@caseyspetsitting4u2.com?subject=Pet%20Sitting%20Inquiry&body=Hi%20Casey%2C%0AI'm%20interested%20in%20your%20pet%20sitting%20services.%20Please%20let%20me%20know%20your%20availability.%0AThank%20you!">
-  info@caseyspetsitting4u2.com
-</a>
- 
+      📧 <a href="mailto:info@caseyspetsitting4u2.com?subject=Pet%20Sitting%20Inquiry&body=Hi%20Casey%2C%0AI'm%20interested%20in%20your%20pet%20sitting%20services.%20Please%20let%20me%20know%20your%20availability.%0AThank%20you!">
+        info@caseyspetsitting4u2.com
+      </a>
     </p>
+  </section>
 
   <footer>
     <p>&copy; 2025 Casey's Pet Sitting 4U</p>
   </footer>
 </body>
+</html>
