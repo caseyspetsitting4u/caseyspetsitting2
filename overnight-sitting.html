@@ -5,96 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Overnight Pet Sitting | Casey's Pet Sitting 4U</title>
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      background-color: #f9f9f9;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-    header, footer {
-      text-align: center;
-      padding: 1rem;
-    }
+header {
+  background-color: #4d6d9a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
 
-    nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-    }
+nav {
+  background-color: #4d6d9a;
+}
 
-    nav a {
-      text-decoration: none;
-      font-weight: bold;
-      color: white;
-    }
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
 
-    section {
-      max-width: 800px;
-      width: 90%;
-      margin: 0 auto;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  padding: 0.5rem 1rem;
+}
 
-    ul {
-      list-style-position: inside;
-      padding: 0;
-      margin: 1rem auto;
-      text-align: left;
-      display: inline-block;
-    }
+nav a:hover {
+  color: #cfdff6;
+}
 
-    .contact-section {
-      text-align: center;
-      padding: 2rem 1rem;
-    }
+section {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
 
-    .contact-info {
-      font-size: 1.2rem;
-      margin-top: 1rem;
-    }
+ul {
+  list-style-position: inside;
+  padding: 0;
+  margin: 1rem auto;
+  text-align: left;
+  display: inline-block;
+}
 
-    .contact-button {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 0.8rem 1.5rem;
-      background-color: #4d6d9a;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
-    }
+.contact-section {
+  text-align: center;
+  padding: 2rem 1rem;
+}
 
-    .contact-button:hover {
-      background-color: #3b577a;
-    }
+.contact-info {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
 
-    footer {
-      background-color: #e0e0e0;
-      margin-top: 2rem;
-    }
+footer {
+  background-color: #e0e0e0;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
 
-    @media (max-width: 600px) {
-      body {
-        font-size: 16px;
-      }
+/* Mobile Styles */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
 
-      nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-      }
+  nav a {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
 
-      .contact-info {
-        font-size: 1rem;
-      }
-    }
-  </style>
+  .contact-info {
+    font-size: 1rem;
+  }
+}
+ 
 </head>
 <body>
 <header>
