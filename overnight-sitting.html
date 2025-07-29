@@ -102,7 +102,26 @@
       .contact-info {
         font-size: 1rem;
       }
-    }
+    }@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem; /* reduce spacing between items */
+  }
+
+  nav a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    line-height: 1.2; /* controls vertical spacing inside each menu item */
+    padding: 0.3rem 1rem; /* reduce padding if needed */
+  }
+
+  .contact-info {
+    font-size: 1rem;
+  }
+}
+
   </style>
 </head>
 
