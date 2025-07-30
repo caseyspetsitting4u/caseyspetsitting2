@@ -129,6 +129,38 @@
     font-size: 1rem;
   }
 }
+@media (max-width: 600px) {
+  nav {
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2; /* ✅ Eliminates excess spacing */
+    width: 100%;
+  }
+
+  nav a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    line-height: 1.2;
+    padding: 0.3rem 1rem;
+  }
+
+  .contact-info {
+    font-size: 1rem;
+  }
+}
 
 
 </style>
