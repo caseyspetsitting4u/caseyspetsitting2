@@ -208,5 +208,58 @@ Messaging Terms and Conditions
 
         // Call the function to get the location
         window.onload = getGeolocation;  // Automatically run when the page loads
-    </script></body>
+    </script><!-- Geolocation and Reverse Geocoding Script -->
+  <script>
+    // Function to call Google Geolocation API
+    function getGeolocation() {
+      const url = `https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyBR-rv9zuQxpkeD7liBq_a0JSQTHNRI_04`;
+
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Location data:', data);
+        if (data.location) {
+          const latitude = data.location.lat;
+          const longitude = data.location.lng;
+          console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+
+          // Call reverse geocoding to get the full address
+          reverseGeocode(latitude, longitude);
+        } else {
+          console.log('No location data found.');
+        }
+      })
+      .catch(error => {
+        console.error('Error with Geolocation API:', error);
+      });
+    }
+
+    // Function to reverse geocode coordinates (latitude, longitude) to an address
+    function reverseGeocode(latitude, longitude) {
+      const apiKey = 'AIzaSyBR-rv9zuQxpkeD7liBq_a0JSQTHNRI_04'; // Replace with your API key
+
+      const url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${apiKey}`;
+
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          if (data.results.length > 0) {
+            const address = data.results[0].formatted_address;
+            console.log("Address: " + address);
+          } else {
+            console.log("No address found.");
+          }
+        })
+        .catch(error => console.error("Error:", error));
+    }
+
+    // Call the function to get the geolocation and address when the page loads
+    window.onload = getGeolocation;
+  </script>
+</body>
 </html>
