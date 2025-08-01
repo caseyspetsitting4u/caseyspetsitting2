@@ -177,5 +177,35 @@ Messaging Terms and Conditions
   <footer>
     <p>&copy; 2025 Casey's Pet Sitting 4U</p>
   </footer>
-</body>
+ <!-- Place script here to run after page content loads -->
+    <script>
+        // Function to call Google Geolocation API
+        function getGeolocation() {
+            const url = `https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyBR-rv9zuQxpkeD7liBq_a0JSQTHNRI_04`;
+
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Location data:', data);
+                if (data.location) {
+                    const latitude = data.location.lat;
+                    const longitude = data.location.lng;
+                    console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+                } else {
+                    console.log('No location data found.');
+                }
+            })
+            .catch(error => {
+                console.error('Error with Geolocation API:', error);
+            });
+        }
+
+        // Call the function to get the location
+        window.onload = getGeolocation;  // Automatically run when the page loads
+    </script></body>
 </html>
